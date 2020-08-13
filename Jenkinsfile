@@ -1,6 +1,4 @@
-pipeline {
-
-  agent { label 'kubepod' }
+pipeline{
 
   stages {
 
