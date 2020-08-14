@@ -1,12 +1,12 @@
 pipeline {
 
-  agent any
+  agent { label 'kubepod' }
 
   stages {
 
     stage('Checkout Source') {
       steps {
-        git url:'https://github.com/master6789/playjenkins.git'
+        git url:'https://github.com/master6789/playjenkins.git', branch:'nginxdeploy'
       }
     }
 
